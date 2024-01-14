@@ -23,8 +23,7 @@ jobs:
         uses: gautamkrishnar/keepalive-workflow@v1
           
       - name: Cloudflare Gateway Zero Trust 
-        shell: pwsh
-        run: .\run.ps1
+        run: bash run.sh
           
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
