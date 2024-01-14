@@ -10,4 +10,4 @@
    >> Mechanism of action: Patch list CG
    >>> Keywords: patch & run (or leave)
 
-Set Variables, Please read [Cloudflare-Gateway-Pihole](https://github.com/luxysiv/Cloudflare-Gateway-Pihole#Readme)
+Set Variables, Please read [Cloudflare-Gateway-Pihole](https://github.com/luxysiv/Cloudflare-Gateway-Pihole#README.md)
