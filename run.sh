@@ -11,6 +11,9 @@ scriptPathPyhole="./Cloudflare-Gateway-Pyhole"
 # Grant execute permissions to the files
 chmod +x "$scriptPathPihole" "$scriptPathPyhole"
 
+# Get the current directory
+currentDirectory=$(pwd)
+
 # Run the appropriate script based on mode and cloudflare
 case "$mode:$cloudflare" in
     normal:run)
