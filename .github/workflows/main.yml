@@ -19,9 +19,9 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: Keep alive 
-        uses: gautamkrishnar/keepalive-workflow@v1
-          
+      - name: Keepalive Workflow
+        uses: gautamkrishnar/keepalive-workflow@1.2.2
+
       - name: Cloudflare Gateway Zero Trust 
         run: bash run.sh
           
