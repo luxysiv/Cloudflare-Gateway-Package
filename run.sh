@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set mode and cloudflare variables
-mode="patch"
-cloudflare="leave"
+mode="normal"
+cloudflare="run"
 
 # Set file paths
 scriptPathPihole="./Cloudflare-Gateway-Pihole"
