@@ -2,7 +2,7 @@
 
 # Set mode and cloudflare variables
 mode="patch"
-cloudflare="run"
+cloudflare="leave"
 
 # Set file paths
 scriptPathPihole="./Cloudflare-Gateway-Pihole"
