@@ -2,7 +2,7 @@ name: Add Rules to Cloudflare Gateway
 on:
   push:
   schedule:
-    - cron: "0 */2 * * *"
+    - cron: "10 */2 * * *"
   workflow_dispatch:
 jobs:
   run:
@@ -10,6 +10,9 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     env:
+      GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+      GITHUB_REPOSITORY_NAME: ${{ github.event.repository.name }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       CF_IDENTIFIER: ${{ secrets.CF_IDENTIFIER }}
 
@@ -19,11 +22,13 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: Keepalive Workflow
-        uses: gautamkrishnar/keepalive-workflow@1.2.2
-
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+          
       - name: Cloudflare Gateway Zero Trust 
-        run: bash run.sh
+        run: python -m src
           
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
