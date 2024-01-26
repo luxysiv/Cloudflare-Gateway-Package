@@ -22,13 +22,8 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: Install Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: 3.11
-          
       - name: Cloudflare Gateway Zero Trust 
-        run: python -m src
+        run: bash run.sh
           
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
