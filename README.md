@@ -42,3 +42,4 @@ async function handleScheduledEvent() {
 }
 ```
 >> Remember set up Cloudflare Workers cron triggers
+>> Deloy success is ok, don't care about log console 
