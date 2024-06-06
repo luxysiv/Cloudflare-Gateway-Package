@@ -1,1 +1,2 @@
-
+api-js.datadome.co
+connect.facebook.net
