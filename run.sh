@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set mode and cloudflare variables
-mode="normal"
+mode="patch"
 cloudflare="run"
 
 # Set file paths
