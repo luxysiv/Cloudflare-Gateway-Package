@@ -6,7 +6,6 @@ cloudflare="run"
 
 # Set file paths
 scriptPathPihole="./Cloudflare-Gateway-Pihole"
-scriptPathPyhole="./Cloudflare-Gateway-Pyhole"
 
 # Function to run the appropriate script
 run_script() {
@@ -30,20 +29,12 @@ notify() {
 
 # Run the appropriate script based on mode and cloudflare
 case "$mode:$cloudflare" in
-    normal:run)
+    patch:run)
         notify 32 "Running script..."
         run_script "$scriptPathPihole" "run"
         ;;
-    normal:leave)
-        notify 33 "Leaving script..."
-        run_script "$scriptPathPihole" "leave"
-        ;;
-    patch:run)
-        notify 32 "Running script..."
-        run_script "$scriptPathPyhole" "run"
-        ;;
     patch:leave)
         notify 33 "Leaving script..."
-        run_script "$scriptPathPyhole" "leave"
+        run_script "$scriptPathPihole" "leave"
         ;;
 esac
