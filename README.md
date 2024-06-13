@@ -1,6 +1,9 @@
 **Run Cloudflare-Gateway-Package**
+### Note
+---
+* Script not update any more. Please use main repository [Cloudflare-Gateway-Pihole](https://github.com/luxysiv/Cloudflare-Gateway-Pihole)
 
-Set Variables, Please read [Cloudflare-Gateway-Pihole](https://github.com/luxysiv/Cloudflare-Gateway-Pihole#README.md)
+* Set Variables, Please read [Cloudflare-Gateway-Pihole](https://github.com/luxysiv/Cloudflare-Gateway-Pihole#README.md)
 
 ### Schedule 
 ---
